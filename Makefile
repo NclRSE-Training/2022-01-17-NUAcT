@@ -53,7 +53,7 @@ docker-serve :
 	docker pull carpentries/lesson-docker:latest
 	docker run --rm -it \
 		-v $${PWD}:/home/rstudio \
-		-p 4000:4000 \
+		-p 4001:4000 \
 		-p 8787:8787 \
 		-e USERID=$$(id -u) \
 		-e GROUPID=$$(id -g) \
